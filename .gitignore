@@ -1,0 +1,41 @@
+# Build output
+/build/
+/build-*/
+*.o
+*.a
+*.dylib
+*.so
+
+# Doxygen output
+/docs/html/
+/docs/latex/
+/docs/xml/
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+compile_commands.json
+
+# Logs / scratch
+*.log
+
+# Python bytecode
+__pycache__/
+
+# Demo output artifacts (regenerate via ring_demo + animate_filaments.py)
+*.gif
+*.mp4
+/frames*.txt
+/ring_*.txt
+
+
+# Claude Code local state (worktrees, settings)
+.claude/
+
+# Generated GIFs / sim visualizations (discoverable, not committed)
+gifs/
+
+# Dear ImGui per-run window layout (rewrites itself; not version-controlled)
+imgui.ini
+

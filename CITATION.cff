@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+title: "bochner: gauge-covariant geometric multigrid for the connection Laplacian"
+message: "If you use this software or results produced with it, please cite the accompanying paper."
+type: software
+authors:
+  - family-names: "Knöppel"
+    given-names: "Felix"
+    email: "f.j.knoeppel@gmail.com"
+repository-code: "https://github.com/ai-sci-computing/bochner"
+license-url: "https://github.com/ai-sci-computing/bochner/blob/main/LICENSE"
+version: "0.0.1"
+date-released: "2026-07-19"
+keywords:
+  - connection Laplacian
+  - magnetic Laplacian
+  - Bochner Laplacian
+  - geometric multigrid
+  - gauge covariance
+  - eigenvalue problem
+  - LOBPCG
+  - lattice gauge theory
+  - vortex filament extraction
+  - fluid simulation
+abstract: >-
+  An interactive Covector Fluids solver on a MAC grid whose vortex structure is
+  extracted live as discrete vortex filaments (Weissmann–Pinkall), built around
+  covMG-LOBPCG: a gauge-covariant geometric multigrid eigensolver for the
+  smallest eigenpair of the U(1) connection Laplacian, with a parallel-transport
+  (covariant subdivision) prolongation, its exact adjoint as restriction, and an
+  A-energy-optimal coarse-correction step. Mesh-independent, and 3–13× faster
+  than the SLEPc Lanczos baseline over 27k–524k DOFs single-threaded. Includes
+  an SU(N) generalization and a Wilson-action Monte Carlo harness.
+preferred-citation:
+  type: article
+  title: >-
+    Fast Ground States of the Connection Laplacian: A Gauge-Covariant Geometric
+    Multigrid with Closed-Form Transfers
+  authors:
+    - family-names: "Knöppel"
+      given-names: "Felix"
+      email: "f.j.knoeppel@gmail.com"
+  year: 2026
+  month: 7
+  # TODO(release): add `doi:` and `journal:`/`notes: arXiv:XXXX.XXXXX` once the
+  # preprint is posted. Deliberately absent rather than guessed -- nothing in
+  # this repository should carry an identifier that does not resolve.

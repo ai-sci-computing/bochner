@@ -1,0 +1,31 @@
+# Doxygen configuration (templated by CMake). Generate with:
+#   cmake --build build --target docs
+PROJECT_NAME           = "bochner"
+PROJECT_NUMBER         = @PROJECT_VERSION@
+PROJECT_BRIEF          = "Connection-Laplacian numerics & vortex-filament fluids"
+OUTPUT_DIRECTORY       = @CMAKE_CURRENT_SOURCE_DIR@/docs
+INPUT                  = @CMAKE_CURRENT_SOURCE_DIR@/src \
+                         @CMAKE_CURRENT_SOURCE_DIR@/README.md \
+                         @CMAKE_CURRENT_SOURCE_DIR@/docs/simulation-algorithm.md \
+                         @CMAKE_CURRENT_SOURCE_DIR@/docs/gauge-multigrid.md \
+                         @CMAKE_CURRENT_SOURCE_DIR@/docs/gauge-solver-comparison.md
+IMAGE_PATH             = @CMAKE_CURRENT_SOURCE_DIR@/images @CMAKE_CURRENT_SOURCE_DIR@/docs
+USE_MDFILE_AS_MAINPAGE = @CMAKE_CURRENT_SOURCE_DIR@/README.md
+RECURSIVE              = YES
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+HAVE_DOT               = NO
+QUIET                  = YES
+WARN_IF_UNDOCUMENTED   = YES
+JAVADOC_AUTOBRIEF      = YES
+OPTIMIZE_OUTPUT_FOR_C  = NO
+BUILTIN_STL_SUPPORT    = YES
+SOURCE_BROWSER         = YES
+# Render LaTeX formulas with MathJax (client-side) instead of shelling out to a
+# latex install, which is not present here (and produced _formulas.tex errors).
+USE_MATHJAX            = YES
+# Light ("bright") HTML theme, not the OS-following auto scheme that renders dark.
+HTML_COLORSTYLE        = LIGHT
